@@ -1,0 +1,432 @@
+{
+  "package_version": "1.0",
+  "freeze_date": "2026-09-25",
+  "framework_version": "PSF v0.2",
+  "corpus": {
+    "cases": 30,
+    "strata": 6,
+    "cases_per_stratum": 5,
+    "candidate_pool": 60,
+    "sampling": "stratified purposive pilot corpus; not a prevalence sample",
+    "final_randomization_seed": "PSF-PILOT-2026-09-17-FINAL-V1"
+  },
+  "coder_design": {
+    "models": [
+      "GPT-5.6 Sol",
+      "Claude Opus 5"
+    ],
+    "runs_per_model": 3,
+    "planned_model_case_observations": 180,
+    "execution_unit": "one case per isolated API call",
+    "effort": "high",
+    "closed_book": true,
+    "web_access": false,
+    "repeated_runs_are_independent_coders": false
+  },
+  "final_observation_status": {
+    "strict_valid": 179,
+    "strict_invalid": 1,
+    "residual_incomplete": 0,
+    "invalid_record": {
+      "model": "Claude Opus 5",
+      "run": 2,
+      "case_id": "P01",
+      "reason": "duplicate X cross-cutting entry; PRIMARY=A and primary evidence tier=E2 are intact",
+      "strict_treatment": "exclude from strict full-record analyses",
+      "sensitivity_treatment": "may include PRIMARY only in a pre-specified sensitivity analysis"
+    }
+  },
+  "technical_recovery": {
+    "initial_output_ceiling": 3000,
+    "initial_incomplete": 26,
+    "recovered_at_6000": 22,
+    "still_incomplete_after_6000": 4,
+    "recovered_at_12000": 4,
+    "residual_token_censoring": 0,
+    "final_12000_records": [
+      {
+        "run": 1,
+        "case_id": "P21",
+        "primary": "E",
+        "output_tokens": 5286,
+        "cost_usd": 0.2824
+      },
+      {
+        "run": 2,
+        "case_id": "P06",
+        "primary": "A",
+        "output_tokens": 5290,
+        "cost_usd": 0.1447
+      },
+      {
+        "run": 3,
+        "case_id": "P06",
+        "primary": "A",
+        "output_tokens": 6040,
+        "cost_usd": 0.1634
+      },
+      {
+        "run": 3,
+        "case_id": "P21",
+        "primary": "E",
+        "output_tokens": 4412,
+        "cost_usd": 0.1223
+      }
+    ],
+    "stopping_rule": "No further technical recovery after the pre-specified 12,000-token final attempt."
+  },
+  "primary_reliability": {
+    "within_model": {
+      "GPT-5.6 Sol": {
+        "run1_vs_run2": {
+          "n": 30,
+          "agreement": 0.9,
+          "cohen_kappa": 0.879
+        },
+        "run1_vs_run3": {
+          "n": 30,
+          "agreement": 0.8666666667,
+          "cohen_kappa": 0.837
+        },
+        "run2_vs_run3": {
+          "n": 30,
+          "agreement": 0.8333333333,
+          "cohen_kappa": 0.797
+        },
+        "pooled_pairwise": {
+          "n": 90,
+          "agreement": 0.8666666667,
+          "cohen_kappa": 0.838
+        },
+        "krippendorff_alpha_nominal": 0.839
+      },
+      "Claude Opus 5": {
+        "run1_vs_run2": {
+          "n": 29,
+          "agreement": 0.9310344828,
+          "cohen_kappa": 0.914
+        },
+        "run1_vs_run3": {
+          "n": 30,
+          "agreement": 0.9666666667,
+          "cohen_kappa": 0.958
+        },
+        "run2_vs_run3": {
+          "n": 29,
+          "agreement": 0.9655172414,
+          "cohen_kappa": 0.957
+        },
+        "pooled_pairwise": {
+          "n": 88,
+          "agreement": 0.9545454545,
+          "cohen_kappa": 0.943
+        },
+        "krippendorff_alpha_nominal": 0.944
+      }
+    },
+    "cross_model_same_run": {
+      "run1": {
+        "n": 30,
+        "agreement": 0.8666666667,
+        "cohen_kappa": 0.835
+      },
+      "run2": {
+        "n": 29,
+        "agreement": 0.8965517241,
+        "cohen_kappa": 0.874
+      },
+      "run3": {
+        "n": 30,
+        "agreement": 0.9,
+        "cohen_kappa": 0.877
+      },
+      "pooled": {
+        "n": 89,
+        "agree": 79,
+        "agreement": 0.8876404494,
+        "cohen_kappa": 0.862
+      }
+    },
+    "case_level_consensus": {
+      "n_cases": 30,
+      "agree": 28,
+      "agreement": 0.9333333333,
+      "cohen_kappa": 0.918
+    },
+    "six_run_krippendorff_alpha_descriptive": 0.874,
+    "primary_only_sensitivity": {
+      "opus_pooled_within": {
+        "agreement": 0.9555555556,
+        "cohen_kappa": 0.944
+      },
+      "cross_model_pooled": {
+        "n": 90,
+        "agree": 80,
+        "agreement": 0.8888888889,
+        "cohen_kappa": 0.863
+      }
+    }
+  },
+  "per_code_cross_model": {
+    "A": {
+      "gpt_assignments": 21,
+      "opus_assignments": 20,
+      "both": 19,
+      "dice_f1": 0.9268292683
+    },
+    "B": {
+      "gpt_assignments": 0,
+      "opus_assignments": 0,
+      "both": 0,
+      "dice_f1": null
+    },
+    "C": {
+      "gpt_assignments": 6,
+      "opus_assignments": 6,
+      "both": 4,
+      "dice_f1": 0.6666666667
+    },
+    "D": {
+      "gpt_assignments": 9,
+      "opus_assignments": 8,
+      "both": 8,
+      "dice_f1": 0.9411764706
+    },
+    "E": {
+      "gpt_assignments": 13,
+      "opus_assignments": 12,
+      "both": 12,
+      "dice_f1": 0.96
+    },
+    "F": {
+      "gpt_assignments": 15,
+      "opus_assignments": 15,
+      "both": 15,
+      "dice_f1": 1.0
+    },
+    "G": {
+      "gpt_assignments": 4,
+      "opus_assignments": 1,
+      "both": 1,
+      "dice_f1": 0.4
+    },
+    "U": {
+      "gpt_assignments": 21,
+      "opus_assignments": 27,
+      "both": 20,
+      "dice_f1": 0.8333333333
+    }
+  },
+  "stratum_cross_model_same_run": {
+    "Objective / Generalization": {
+      "n": 14,
+      "agree": 13,
+      "agreement": 0.9285714286
+    },
+    "Harmful Tool-use / Agentic Misalignment": {
+      "n": 15,
+      "agree": 12,
+      "agreement": 0.8
+    },
+    "Evaluation Awareness / Strategic Compliance": {
+      "n": 15,
+      "agree": 14,
+      "agreement": 0.9333333333
+    },
+    "Prompt Injection / Tool Security": {
+      "n": 15,
+      "agree": 11,
+      "agreement": 0.7333333333
+    },
+    "Restraint / Abstention / Corrigibility": {
+      "n": 15,
+      "agree": 14,
+      "agreement": 0.9333333333
+    },
+    "Multi-agent / Systemic Effects": {
+      "n": 15,
+      "agree": 15,
+      "agreement": 1.0
+    }
+  },
+  "stable_case_consensus_disagreements": [
+    {
+      "case_id": "P12",
+      "gpt_consensus": "C",
+      "opus_consensus": "U",
+      "interpretation": "minimum-evidence disagreement about whether demonstrated recognition is established for the focal trajectory"
+    },
+    {
+      "case_id": "P16",
+      "gpt_consensus": "G",
+      "opus_consensus": "U",
+      "interpretation": "standalone Outcome & Feedback criterion when the upstream core transition is unidentified"
+    }
+  ],
+  "same_run_disagreements": [
+    {
+      "run": 1,
+      "case_id": "P05",
+      "gpt": "D",
+      "opus": "U",
+      "boundary": "evaluation awareness / metagaming versus safety-relevant oversight-dependent behavior"
+    },
+    {
+      "run": 1,
+      "case_id": "P12",
+      "gpt": "C",
+      "opus": "U",
+      "boundary": "recognition evidence in focal trajectory"
+    },
+    {
+      "run": 1,
+      "case_id": "P16",
+      "gpt": "G",
+      "opus": "U",
+      "boundary": "standalone delayed/persistent outcome diagnosis"
+    },
+    {
+      "run": 1,
+      "case_id": "P23",
+      "gpt": "E",
+      "opus": "C",
+      "boundary": "runtime stop/replan versus recognized-but-not-enacted update"
+    },
+    {
+      "run": 2,
+      "case_id": "P08",
+      "gpt": "U",
+      "opus": "A",
+      "boundary": "objective/authorization representation inferred from shortcut behavior"
+    },
+    {
+      "run": 2,
+      "case_id": "P12",
+      "gpt": "C",
+      "opus": "U",
+      "boundary": "recognition evidence in focal trajectory"
+    },
+    {
+      "run": 2,
+      "case_id": "P20",
+      "gpt": "A",
+      "opus": "U",
+      "boundary": "operative-objective divergence from poisoned tool metadata"
+    },
+    {
+      "run": 3,
+      "case_id": "P10",
+      "gpt": "G",
+      "opus": "U",
+      "boundary": "cumulative outcome without identified upstream transition"
+    },
+    {
+      "run": 3,
+      "case_id": "P15",
+      "gpt": "A",
+      "opus": "C",
+      "boundary": "objective divergence versus recognized constraint followed by inconsistent intervention"
+    },
+    {
+      "run": 3,
+      "case_id": "P16",
+      "gpt": "G",
+      "opus": "U",
+      "boundary": "standalone Outcome & Feedback criterion"
+    }
+  ],
+  "evidence_layer": {
+    "tier_agreement_by_run": {
+      "run1": {
+        "n": 30,
+        "exact": 0.8,
+        "mean_abs_ordinal_distance": 0.333
+      },
+      "run2": {
+        "n": 29,
+        "exact": 0.7586206897,
+        "mean_abs_ordinal_distance": 0.379
+      },
+      "run3": {
+        "n": 30,
+        "exact": 0.8,
+        "mean_abs_ordinal_distance": 0.333
+      }
+    },
+    "tier_conditional_on_same_primary": {
+      "n": 79,
+      "exact": 0.8607594937,
+      "mean_abs_ordinal_distance": 0.139,
+      "all_disagreements": "adjacent E2 vs E3 only"
+    },
+    "evidence_span_same_primary": {
+      "n": 79,
+      "exact_normalized_span": 0.1518987342,
+      "mean_token_jaccard": 0.493,
+      "median_token_jaccard": 0.424,
+      "at_least_80pct_token_containment": 0.456
+    }
+  },
+  "auxiliary_codes": {
+    "secondary_exact_set_agreement": 0.876,
+    "xy_exact_set_agreement": 0.82,
+    "x_presence_case_consensus_agreement": 0.833,
+    "y_presence_case_consensus_agreement": 0.933,
+    "x_gpt_positive_rate": 0.367,
+    "x_opus_positive_rate": 0.533
+  },
+  "confidence": {
+    "cross_model_exact_agreement": 0.539,
+    "gpt_high": {
+      "count": 72,
+      "denominator": 90,
+      "rate": 0.8
+    },
+    "opus_high": {
+      "count": 31,
+      "denominator": 89,
+      "rate": 0.348
+    },
+    "opus_high_primary_agreement_with_gpt": {
+      "agree": 31,
+      "n": 31,
+      "rate": 1.0
+    },
+    "interpretation": "agreement calibration only; no independent accuracy gold label"
+  },
+  "mitigation_differentiation": {
+    "GPT-5.6 Sol": {
+      "within_primary_tfidf_cosine": 0.192,
+      "between_primary_tfidf_cosine": 0.025,
+      "permutation_p": "<0.001"
+    },
+    "Claude Opus 5": {
+      "within_primary_tfidf_cosine": 0.19,
+      "between_primary_tfidf_cosine": 0.028,
+      "permutation_p": "<0.001"
+    },
+    "interpretation": "exploratory descriptive actionability evidence; not causal validation because diagnosis and mitigation text are generated in the same response"
+  },
+  "cost_usd": {
+    "original_experiment": {
+      "GPT": 3.196,
+      "Opus": 5.925,
+      "combined": 9.121
+    },
+    "first_recovery_6000": {
+      "GPT": 0.684,
+      "Opus": 1.93,
+      "combined": 2.613
+    },
+    "final_recovery_12000": {
+      "GPT": 0.0,
+      "Opus": 0.713,
+      "combined": 0.713
+    },
+    "total_recorded": {
+      "GPT": 3.88,
+      "Opus": 8.568,
+      "combined": 12.447
+    }
+  }
+}

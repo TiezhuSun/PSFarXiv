@@ -1,0 +1,5 @@
+﻿Endpoint,N,Exact agreement,Cohen kappa,Notes
+GPT within-model pooled pairwise,90,86.7%,0.838,Repeated run-pairs share cases; descriptive stability statistic.
+Opus within-model pooled pairwise,88,95.5%,0.943,P01/run2 excluded from strict full-record analysis.
+GPT–Opus same-run pooled,89,88.8%,0.862,Strict valid pairs.
+Case-level model consensus,30,93.3%,0.918,28/30 cases agree.

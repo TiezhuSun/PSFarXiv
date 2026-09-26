@@ -1,0 +1,7 @@
+﻿Stratum,N paired,Agree,Agreement,Interpretation
+Objective / Generalization,14,13,92.9%,High; one A-vs-U disagreement.
+Harmful Tool-use / Agentic Misalignment,15,12,80.0%,"P12/P15 expose recognition, enactment, and specification boundaries."
+Evaluation Awareness / Strategic Compliance,15,14,93.3%,High; P05 is the principal D-vs-U boundary case.
+Prompt Injection / Tool Security,15,11,73.3%,Lowest stratum agreement; G-vs-U and A-vs-U are concentrated here.
+Restraint / Abstention / Corrigibility,15,14,93.3%,High; one C-vs-E runtime-update disagreement.
+Multi-agent / Systemic Effects,15,15,100.0%,Perfect agreement across all 15 same-run pairs.

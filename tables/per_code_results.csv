@@ -1,0 +1,9 @@
+﻿Code,GPT assignments,Opus assignments,Both,Dice/F1,Interpretation
+A,21,20,19,0.927,Strong; residual disagreements concern whether operative objective/authorization is sufficiently evidenced.
+B,0,0,0,,Not observed; corpus does not positively test Situated Recognition failure.
+C,6,6,4,0.667,Positively exercised; P12 remains a C-vs-U recognition-evidence boundary.
+D,9,8,8,0.941,Strong; P05 tests evaluation awareness versus safety-relevant behavior change.
+E,13,12,12,0.960,Strong; residual adjacent boundary is C-vs-E in runtime state-update cases.
+F,15,15,15,1.000,Perfect paired agreement; cleanest category in the pilot.
+G,4,1,1,0.400,Weakest core boundary; standalone Outcome & Feedback criterion is unresolved.
+U,21,27,20,0.833,Conservative fallback; Opus uses U more frequently.

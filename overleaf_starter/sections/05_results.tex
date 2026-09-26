@@ -1,0 +1,26 @@
+\section{Results}
+
+\begin{table}[t]
+\centering
+\caption{Frozen headline PRIMARY-code reliability results.}
+\label{tab:headline}
+\begin{tabular}{lrr}
+\toprule
+Comparison & Exact agreement & Cohen's $\kappa$ \\
+\midrule
+GPT within-model pooled & 86.7\% & .838 \\
+Opus within-model pooled & 95.5\% & .943 \\
+GPT--Opus same-run pooled & 88.8\% & .862 \\
+Case-level model consensus & 93.3\% & .918 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=.86\linewidth]{figures/PSF_Final_Primary_Confusion_v1.0.png}
+\caption{Final same-run PRIMARY-code confusion matrix for strict valid GPT--Opus pairs.}
+\label{fig:confusion}
+\end{figure}
+
+% TODO: Follow manuscript_blueprint/05_results_spec.md.

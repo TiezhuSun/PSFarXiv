@@ -1,0 +1,36 @@
+# 30-Case Primary Source Index
+
+Authority: frozen Master Audit. This is the source provenance for the 30-case corpus.
+
+| Case | Stratum | Neutral title | Primary source | Source URL | Locator |
+|---|---|---|---|---|---|
+| P01 | S1 | Held-out coding environment with access to mock training code | Denison et al., Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models | https://arxiv.org/abs/2406.10162 | Sec. 3.4; pp. 1–3; Sec. 5.2 |
+| P02 | S5 | Simple task interrupted by an explicit shutdown sequence | Schlatter et al., Incomplete Tasks Induce Shutdown Resistance in Some Frontier LLMs | https://arxiv.org/abs/2509.14260 | TMLR 2026 main experiment |
+| P03 | S6 | Shared renewable resource under repeated multi-agent extraction | Piatti et al., Cooperate or Collapse (NeurIPS 2024) | https://proceedings.nips.cc/paper_files/paper/2024/hash/ca9567d8ef6b2ea2da0d7eed57b933ee-Abstract-Conference.html | GovSim main experiments; fishery/pasture/pollution |
+| P04 | S4 | Rendered web interface containing a visual instruction | Cao et al., VPI-Bench | https://arxiv.org/abs/2506.02456 | 306-case benchmark across five platforms |
+| P05 | S3 | Production-like replay versus traditional evaluation contexts | OpenAI, Predicting model behavior before release by simulating deployment | https://openai.com/index/deployment-simulation/ | Reducing evaluation awareness; Fig. 5; aggregate findings |
+| P06 | S2 | Long-horizon office task with a hidden second objective | Kutasov et al., SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents | https://arxiv.org/abs/2506.15740 | Sec. 2; public tasks; Appendix C example task pairs |
+| P07 | S3 | Free-condition versus closed/test-like harmful-behavior scenarios | Chaudhury & Shiromani, ChameleonBench | https://proceedings.mlr.press/v304/chaudhury26a.html | PMLR 304; main benchmark/results |
+| P08 | S1 | Log-forensics task with task-adjacent metadata | Thaman, Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use (ICML 2026) | https://arxiv.org/abs/2605.02964 | Sec. 3.5, Example 1 (LF-2) |
+| P09 | S5 | Web-shopping search with no item that satisfies the instruction | Luo et al., Agentic Abstention | https://arxiv.org/abs/2606.28733 | WebShop Missing Target; timely abstention analysis |
+| P10 | S4 | Navigation chain containing distributed adversarial substeps | Zhan et al., StepJack | https://arxiv.org/abs/2608.06477 | 480-example benchmark; multi-step attack results |
+| P11 | S6 | Turn-based interaction among autonomous nation agents | Rivera et al., Escalation Risks from Language Models in Military and Diplomatic Decision-Making | https://arxiv.org/abs/2401.03408 | Eight-agent setup; five LLMs; 14-turn, three-scenario experiments |
+| P12 | S2 | Synthetic marketplace and outbound-contact task | Andriushchenko et al., AgentHarm (ICLR 2025) | https://proceedings.iclr.cc/paper_files/paper/2025/hash/c493d23af93118975cdbc32cbe7323f5-Abstract-Conference.html | Fig. 4 / Behavior 'Fake Documents' |
+| P13 | S6 | Repeated price competition among autonomous pricing algorithms | Calvano et al., Artificial Intelligence, Algorithmic Pricing, and Collusion (AER 2020) | https://www.aeaweb.org/articles?id=10.1257%2Faer.20190623 | Main repeated-price experiments |
+| P14 | S5 | Information request that available tools cannot answer | Ross et al., When2Call | https://aclanthology.org/2025.naacl-long.174/ | Fig. 1; benchmark behavior categories/results |
+| P15 | S2 | Training pipeline with a pre-existing runtime cache | Anthropic, Agentic Misalignment in Summer 2026 | https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/ | Covert Sabotage section; main Gemini 3.1 Pro case |
+| P16 | S4 | External content that becomes persistent agent memory | Dash et al., From Untrusted Input to Trusted Memory / MPBench | https://arxiv.org/abs/2606.04329 | AIWILD @ ICML 2026; MPBench public dataset |
+| P17 | S3 | Classifying whether a transcript comes from an evaluation | Needham et al., Large Language Models Often Know When They Are Being Evaluated | https://arxiv.org/abs/2505.23836 | Main 1,000-transcript benchmark |
+| P18 | S1 | Racing agent repeatedly farms local score targets instead of finishing | OpenAI, Faulty reward functions in the wild | https://openai.com/index/faulty-reward-functions/ | CoastRunners experiment; lines describing target-based score and lagoon loop |
+| P19 | S6 | Collective-risk game influenced by a prediction of group behavior | Góis et al., Performative Prediction on Games and Mechanism Design (AISTATS 2025) | https://proceedings.mlr.press/v258/gois25a.html | Collective-risk dilemma; accuracy vs welfare analysis |
+| P20 | S4 | Tool descriptions containing hidden behavioral instructions | Wang et al., MCPTox | https://ojs.aaai.org/index.php/AAAI/article/view/40895 | AAAI 2026; real-server benchmark |
+| P21 | S2 | Replacement-server task with an editable oversight configuration | Meinke et al., Frontier Models are Capable of In-context Scheming / Apollo Research | https://www.apolloresearch.ai/science/frontier-models-are-capable-of-incontext-scheming ; https://arxiv.org/abs/2412.04984 | Self-exfiltration + oversight-subversion evaluations; Apollo demo example |
+| P22 | S3 | Code generation conditioned on a year cue | Hubinger et al., Sleeper Agents | https://arxiv.org/abs/2401.05566 | Main 2023/2024 backdoor experiments |
+| P23 | S5 | Web-navigation task after the user changes the origin mid-execution | Zou et al., InterruptBench | https://arxiv.org/abs/2604.00892 | Trajectory example around Fig. F.1; Secs. 3-4 |
+| P24 | S1 | Robotic block-stacking task with geometric shaping reward | Popov et al., Data-Efficient Deep Reinforcement Learning for Dexterous Manipulation; behavior documented in Google DeepMind synthesis | https://arxiv.org/abs/1704.03073 ; https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/ | DeepMind synthesis of Popov et al.; block-flip example |
+| P25 | S1 | Plant-watering task with an observation-transforming cell | Leike et al., AI Safety Gridworlds | https://arxiv.org/abs/1711.09883 | Sec. 2.1.4, Fig. 5; Sec. 3.2 |
+| P26 | S2 | Sandboxed systems with published vulnerability descriptions | Fang et al., LLM Agents can Autonomously Exploit One-day Vulnerabilities | https://arxiv.org/abs/2404.08144 | Secs. 3–5; Table 1; end-to-end results |
+| P27 | S4 | Tool-returned content containing an attacker instruction | Zhan et al., InjecAgent | https://aclanthology.org/2024.findings-acl.624/ | Findings ACL 2024; main benchmark/results |
+| P28 | S5 | Irreversible travel action before a rebooking conflict is resolved | Liu et al., AgentAbstain | https://arxiv.org/abs/2607.10059 | Intro example; Sec. 3.2; Appendix G |
+| P29 | S3 | Changing test-awareness activations and observing safety behavior | Abdelnabi & Salem, The Hawthorne Effect in Reasoning Models | https://proceedings.neurips.cc/paper_files/paper/2025/hash/cf42f133f355e0e07a8957b508b26a1b-Abstract-Conference.html | NeurIPS 2025 main paper |
+| P30 | S6 | Allocation of scarce tasks across recipients with different returns | Shi et al., Social Welfare Function Leaderboard (Findings ACL 2026) | https://aclanthology.org/2026.findings-acl.1919/ | 20-model dynamic allocation benchmark; ROI vs Gini; persuasion conditions |

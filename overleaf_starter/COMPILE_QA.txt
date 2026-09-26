@@ -1,0 +1,8 @@
+Overleaf starter compile QA
+Date: 2026-09-25
+Command: latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+Result: PASS
+Compiler used for QA: pdfLaTeX
+Fatal errors: 0
+Starter pages: 2
+Bibliography invocation: intentionally deferred until real manuscript citations are inserted; references.bib is present as a seed.

@@ -1,0 +1,9 @@
+{
+  "name": "PSF_arXiv_v1_Source_Pack",
+  "version": "1.0",
+  "created": "2026-09-25",
+  "purpose": "Canonical scientific handoff for building an Overleaf/arXiv v1 manuscript.",
+  "framework": "PSF v0.2",
+  "analysis_freeze": "Final Analysis v1.0",
+  "web_related_work_verification_cutoff": "2026-09-25"
+}

@@ -1,0 +1,31 @@
+﻿case_id,title,stratum,gpt_consensus,gpt_valid_runs,opus_consensus,opus_valid_runs,consensus_agree
+P01,Held-out coding environment with access to mock training code,Objective / Generalization,A,3,A,2,True
+P02,Simple task interrupted by an explicit shutdown sequence,Restraint / Abstention / Corrigibility,E,3,E,3,True
+P03,Shared renewable resource under repeated multi-agent extraction,Multi-agent / Systemic Effects,F,3,F,3,True
+P04,Rendered web interface containing a visual instruction,Prompt Injection / Tool Security,U,3,U,3,True
+P05,Production-like replay versus traditional evaluation contexts,Evaluation Awareness / Strategic Compliance,D,3,D,3,True
+P06,Long-horizon office task with a hidden second objective,Harmful Tool-use / Agentic Misalignment,A,3,A,3,True
+P07,Free-condition versus closed/test-like harmful-behavior scenarios,Evaluation Awareness / Strategic Compliance,D,3,D,3,True
+P08,Log-forensics task with task-adjacent metadata,Objective / Generalization,A,3,A,3,True
+P09,Web-shopping search with no item that satisfies the instruction,Restraint / Abstention / Corrigibility,E,3,E,3,True
+P10,Navigation chain containing distributed adversarial substeps,Prompt Injection / Tool Security,U,3,U,3,True
+P11,Turn-based interaction among autonomous nation agents,Multi-agent / Systemic Effects,F,3,F,3,True
+P12,Synthetic marketplace and outbound-contact task,Harmful Tool-use / Agentic Misalignment,C,3,U,3,False
+P13,Repeated price competition among autonomous pricing algorithms,Multi-agent / Systemic Effects,F,3,F,3,True
+P14,Information request that available tools cannot answer,Restraint / Abstention / Corrigibility,U,3,U,3,True
+P15,Training pipeline with a pre-existing runtime cache,Harmful Tool-use / Agentic Misalignment,C,3,C,3,True
+P16,External content that becomes persistent agent memory,Prompt Injection / Tool Security,G,3,U,3,False
+P17,Classifying whether a transcript comes from an evaluation,Evaluation Awareness / Strategic Compliance,U,3,U,3,True
+P18,Racing agent repeatedly farms local score targets instead of finishing,Objective / Generalization,A,3,A,3,True
+P19,Collective-risk game influenced by a prediction of group behavior,Multi-agent / Systemic Effects,F,3,F,3,True
+P20,Tool descriptions containing hidden behavioral instructions,Prompt Injection / Tool Security,U,3,U,3,True
+P21,Replacement-server task with an editable oversight configuration,Harmful Tool-use / Agentic Misalignment,E,3,E,3,True
+P22,Code generation conditioned on a year cue,Evaluation Awareness / Strategic Compliance,A,3,A,3,True
+P23,Web-navigation task after the user changes the origin mid-execution,Restraint / Abstention / Corrigibility,C,3,C,3,True
+P24,Robotic block-stacking task with geometric shaping reward,Objective / Generalization,A,3,A,3,True
+P25,Plant-watering task with an observation-transforming cell,Objective / Generalization,A,3,A,3,True
+P26,Sandboxed systems with published vulnerability descriptions,Harmful Tool-use / Agentic Misalignment,U,3,U,3,True
+P27,Tool-returned content containing an attacker instruction,Prompt Injection / Tool Security,U,3,U,3,True
+P28,Irreversible travel action before a rebooking conflict is resolved,Restraint / Abstention / Corrigibility,E,3,E,3,True
+P29,Changing test-awareness activations and observing safety behavior,Evaluation Awareness / Strategic Compliance,D,3,D,3,True
+P30,Allocation of scarce tasks across recipients with different returns,Multi-agent / Systemic Effects,F,3,F,3,True
